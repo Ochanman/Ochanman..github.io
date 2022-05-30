@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Lato";
+  src: url(../font/Lato-Regular.ttf);
+}
+body {
+  margin: 0;
+}
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(157, 187, 75);
+  list-style: none;
+  padding-right: 10%;
+}
+.main-menu li {
+  padding: 8px 15px;
+}
+
+.main-menu li a {
+  text-decoration: none;
+  font-family: "Lato";
+  font-weight: 700;
+}
+.box {
+  width: 25%;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px black;
+  margin: 10px;
+  position: relative;
+}
+.box-img {
+  width: 100%;
+  object-fit: cover;
+}
+.btnchasseur {
+  background-color: rgb(77, 41, 9);
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lato";
+}
+.btnchasseur:hover {
+  background-color: rgb(233, 117, 16);
+  color: white;
+}
+.btnmoine {
+  background-color: rgb(15, 77, 9);
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lato";
+}
+.btnmoine:hover {
+  background-color: rgb(78, 233, 16);
+  color: white;
+}
+.btnpaladin {
+  background-color: rgb(63, 9, 77);
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Lato";
+}
+.btnpaladin:hover {
+  background-color: rgb(182, 16, 233);
+  color: white;
+}
+.boxParent {
+  display: flex;
+  justify-content: center;
+}
+h1,
+p {
+  padding: 10px;
+  font-family: "Lato";
+  line-height: 150%;
+}
+.boxParent p {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 576px) {
+  .boxParent {
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  .box {
+    width: 100%;
+  }
+}
